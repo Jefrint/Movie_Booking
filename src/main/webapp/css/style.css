@@ -1,0 +1,539 @@
+@charset "ISO-8859-1";
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+      line-height: 1.6;
+    }
+	.btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-primary {
+      background: crimson;
+      color: white;
+          text-decoration: none;
+      
+    }
+    .btn-primary:hover {
+      background: #e63946;
+    }
+    .btn-dark {
+      background: #222;
+      color: white;
+      border: 1px solid #444;
+    }
+    .btn-dark:hover {
+      background: #333;
+    }
+    /* About Us Section */
+	.about-section {
+	  padding: 60px 20px;
+	  text-align: center;
+	}
+	
+	.about-section h1 {
+	  font-size: 36px;
+	  margin-bottom: 20px;
+	  color:  #fff;;
+	}
+	
+	.about-section .intro-text {
+	  font-size: 16px;
+	  color: #bbb;
+	  max-width: 700px;
+	  margin: 0 auto 40px;
+	  line-height: 1.8;
+	}
+	
+	.about-cards {
+	  display: flex;
+	  justify-content: space-between;
+	  gap: 20px;
+	  flex-wrap: wrap;
+	}
+	
+	.about-cards .card {
+	  background: #111;
+	  border: 1px solid #222;
+	  border-radius: 12px;
+	  padding: 25px;
+	  flex: 1;
+	  min-width: 250px;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+	  transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	.about-cards .card h2 {
+	  margin-bottom: 12px;
+	  font-size: 20px;
+	  color: #fff;
+	}
+	
+	.about-cards .card p {
+	  font-size: 14px;
+	  color: #ccc;
+	  line-height: 1.6;
+	}
+	
+	.about-cards .card:hover {
+	  transform: translateY(-5px);
+	  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+	}
+	    
+	    
+	/* Movies Section */
+.movies-section {
+    padding: 50px;
+    background: #000;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+/* Genre Filter */
+.genre-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.genre-filter button {
+    background: #111;
+    border: 1px solid #333;
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.genre-filter button:hover,
+.genre-filter button.active {
+    background: red;
+    border-color: red;
+}
+
+/* Movies Grid */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.movie-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.02);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.movie-info p {
+    margin: 8px 0;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+.showtimes {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.showtimes span {
+    background: #000;
+    border: 1px solid #444;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.book-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: red;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: #cc0000;
+}
+
+.book-btn:hover {
+    background: #cc0000;
+}
+
+/* sign up  */
+
+
+ .form-container {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            background: #111;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .form-container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border-radius: 6px;
+            border: 1px solid #333;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .form-container input[type="text"]:focus,
+        .form-container input[type="email"]:focus,
+        .form-container input[type="password"]:focus {
+            border-color: crimson;
+            outline: none;
+        }
+        .form-container .btn {
+            width: 100%;
+        }
+        .form-container p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        
+    .seat-grid {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 8px;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    .seat {
+        width: 40px;
+        height: 40px;
+        background: #eee;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+    .seat input {
+        display: none;
+    }
+    .seat label {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .seat input:checked + label {
+        background: #4caf50;
+        color: #fff;
+        border-radius: 5px;
+    }
+    .screen {
+        background: #444;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin: 20px auto;
+        width: 60%;
+        border-radius: 5px;
+    }
+  .confirm-container {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  margin-top: 20px;
+}
+
+.confirm-btn {
+  width: 30%;
+  padding: 10px;
+  background: red;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.confirm-btn:hover {
+  background: #cc0000;
+}
+
+/* Admin Dashboard */
+.admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.admin-container h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-container h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Forms */
+.admin-form {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.admin-form label {
+    display: block;
+    color: #ccc;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.admin-form input,
+.admin-form select,
+.admin-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+}
+
+.admin-form input:focus,
+.admin-form select:focus,
+.admin-form textarea:focus {
+    outline: none;
+    border-color: crimson;
+}
+
+/* Buttons */
+.admin-form .btn,
+.admin-table .btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-form .btn {
+    background: red;
+    color: #fff;
+    width: 100%;
+}
+
+.admin-form .btn:hover {
+    background: #cc0000;
+}
+
+/* Edit/Delete Buttons */
+.admin-table .edit-btn {
+    background: orange;
+    color: #fff;
+}
+
+.admin-table .edit-btn:hover {
+    background: darkorange;
+}
+
+.admin-table .delete-btn {
+    background: #333;
+    color: #fff;
+}
+
+.admin-table .delete-btn:hover {
+    background: #000;
+}
+
+/* Table Styling */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.admin-table th {
+    background: #222;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    .admin-table, .admin-table th, .admin-table td {
+        font-size: 0.85rem;
+    }
+
+    .admin-form input, 
+    .admin-form select, 
+    .admin-form textarea {
+        font-size: 0.9rem;
+    }
+}
+.myticket-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.myticket-container h2 {
+	color: #ccc;
+	
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.no-tickets {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* Ticket Card */
+.ticket-card {
+    background: #1e1e1e;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ticket-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ticket-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.ticket-header .status {
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.status.confirmed {
+    background-color: #28a745; /* green */
+}
+
+.status.cancelled {
+    background-color: #dc3545; /* red */
+}
+
+.status.pending {
+    background-color: #ffc107; /* yellow */
+    color: #000;
+}
+
+.ticket-body p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+@media screen and (max-width: 600px) {
+    .ticket-card {
+        padding: 12px 15px;
+    }
+
+    .ticket-header h3 {
+        font-size: 1rem;
+    }
+
+    .ticket-body p {
+        font-size: 0.85rem;
+    }
+}
+
+

@@ -1,0 +1,42 @@
+ header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #0a0a0a;
+      border-bottom: 1px solid #222;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .logo span {
+      background: crimson;
+      color: white;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ccc;
+      font-size: 14px;
+    }
+    nav a:hover {
+      color: white;
+    }
+    .actions a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #ccc;
+      font-size: 14px;
+    }
+ 
