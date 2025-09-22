@@ -6,9 +6,13 @@ This project allows users to browse movies, select show timings, and book ticket
 Features
 
 User can view available movies.
+
 Select movie, showtime, and number of seats.
+
 Book tickets with a confirmation page.
-Admin can add or manage movies (if implemented).
+
+Admin can add or manage movies .
+
 Simple session management for user login/logout.
 
 Tech Stack
